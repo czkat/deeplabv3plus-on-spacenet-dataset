@@ -1,0 +1,32 @@
+backbone:drn_c42
+out_stride:8
+dataset:spaceNet
+data_root:/mnt/data2/Projects/BuildingDetection/modify/code_server/datasets/converters/trainval/
+workers:4
+sync_bn:False
+freeze_bn:False
+loss_type:ce_dice
+fbeta:0.5
+loss_weights:[1.0, 1.0]
+num_classes:2
+dropout:[0.3, 0.5]
+epochs:60
+start_epoch:0
+batch_size:4
+test_batch_size:4
+lr:0.001
+momentum:0.9
+weight_decay:0.0001
+nesterov:False
+no_cuda:False
+gpu_ids:0
+seed:1
+checkname:spaceNet
+no_val:False
+use_wandb:False
+resume:spaceNet
+evaluate:False
+best_miou:False
+incl_bounds:False
+bounds_kernel_size:3
+cuda:False
